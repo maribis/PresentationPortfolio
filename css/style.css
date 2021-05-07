@@ -5,26 +5,30 @@
 
 
 .section{
-  background-color: #8FDBAA;
-}
-
-.container{
-  background-color: #a57bc4;
-  width: 1200px;
-  margin: 0 auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
   padding-left: 60px;
   padding-right: 60px;
 }
 
+.container{
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 
 .menu_container{
+  padding-top: 5px;
   float: right;
+
 }
 
 #menu_buttons{
   padding: 20px;
-  
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 4px;
 
 }
