@@ -11,20 +11,21 @@
 
 #header_img{
   background-image: url(/Users/maryam/Documents/Code/PresentationPortfolio/Images/de.png);
-  height: 70vh;
+  height: 600px;
 }
 
 .heading_container{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-  align-content: center;
+  padding-top: 180px;
+}
+
+h1{
+  font-family: 'Girassol', cursive;
+  font-size: 70;
+  color: white;
 }
 
 .Header_text_container{
   padding: 50px;
-  background-color: white;
   text-align: center;
 }
 
