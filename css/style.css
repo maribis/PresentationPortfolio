@@ -9,6 +9,10 @@
   padding-right: 60px;
 }
 
+#header_img{
+  background-image: url(/Users/maryam/Documents/Code/PresentationPortfolio/Images/de.png);
+}
+
 .container{
   width: 1200px;
   margin: 0 auto;
