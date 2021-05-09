@@ -5,23 +5,41 @@
 
 
 .section{
+}
+
+.container{
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
   padding-left: 60px;
   padding-right: 60px;
 }
 
+
 #header_img{
-  background:
-  linear-gradient(
-      rgba(255, 0, 0, 0.45),
-      rgba(255, 0, 0, 0.45)
-    ),
-  url(/Users/maryam/Documents/Code/PresentationPortfolio/Images/de.png);
+  background-image: url(/Users/maryam/Documents/Code/PresentationPortfolio/Images/de.png);
   background-size: cover;
   height: 600px;
+  position: relative;
+}
+
+.color_overlay{
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: .7;
+  position: absolute;
+  z-index: 1;
 }
 
 .heading_container{
-  padding-top: 180px;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 h1{
@@ -34,14 +52,10 @@ h1{
 .Header_text_container{
   padding: 50px;
   text-align: center;
+  position: absolute;
+  z-index: 10;
 }
 
-.container{
-  width: 1200px;
-  margin: 0 auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
 
 
 .menu_container{
@@ -54,7 +68,7 @@ h1{
   padding: 20px;
   text-decoration: none;
   color: black;
-  font-size: 14px;
+  font-size: 12px;
   font-family: 'Quicksand', sans-serif;
   letter-spacing: 4px;
 
