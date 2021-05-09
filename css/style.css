@@ -10,7 +10,13 @@
 }
 
 #header_img{
-  background-image: url(/Users/maryam/Documents/Code/PresentationPortfolio/Images/de.png);
+  background:
+  linear-gradient(
+      rgba(255, 0, 0, 0.45),
+      rgba(255, 0, 0, 0.45)
+    ),
+  url(/Users/maryam/Documents/Code/PresentationPortfolio/Images/de.png);
+  background-size: cover;
   height: 600px;
 }
 
@@ -22,6 +28,7 @@ h1{
   font-family: 'Girassol', cursive;
   font-size: 70;
   color: white;
+
 }
 
 .Header_text_container{
