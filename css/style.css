@@ -2,7 +2,19 @@
   width: 100px;
   height: auto;
 }
+h1{
+  font-family: 'Girassol', cursive;
+  font-size: 70;
+  color: white;
 
+}
+
+h4{
+  font-family: 'arial';
+  font-weight: 100;
+  font-size: 10px;
+  color: black;
+}
 
 .section{
 }
@@ -22,13 +34,14 @@
   background-size: cover;
   height: 600px;
   position: relative;
+  overflow: hidden;
 }
 
 .color_overlay{
   width: 100%;
   height: 100%;
   background: black;
-  opacity: .7;
+  opacity: .0;
   position: absolute;
   z-index: 1;
 }
@@ -42,12 +55,7 @@
 
 }
 
-h1{
-  font-family: 'Girassol', cursive;
-  font-size: 70;
-  color: white;
 
-}
 
 .Header_text_container{
   padding: 50px;
@@ -72,4 +80,48 @@ h1{
   font-family: 'Quicksand', sans-serif;
   letter-spacing: 4px;
 
+}
+
+#gallery_heading{
+  text-align: center;
+}
+
+
+.social_media{
+  margin: auto;
+  text-align: center;
+}
+
+.my_video{
+  margin: 10px;
+  float: left;
+  height: 210px;
+  width: calc(33% - 20px)
+}
+
+.video_container{
+  margin: auto;
+  width: 100%;
+  height: 690px;
+}
+
+.icons_container{
+  margin: auto;
+  height: 20px;
+}
+
+.social_icons{
+  margin: 10px;
+  height: 100%;
+  display: inline-block;
+}
+
+.footer_text{
+  margin-top: 50px;
+}
+
+#myVideo {
+  position: absolute;
+    top: -20%;
+  width: 100%;
 }
