@@ -2,11 +2,23 @@
   width: 100px;
   height: auto;
 }
+
+.spacer1{
+
+  height: 120px;
+}
+
 h1{
-  font-family: 'Girassol', cursive;
+  font-family: 'Bebas Neue', cursive;
   font-size: 70;
   color: white;
 
+}
+
+h2{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 h4{
@@ -14,6 +26,12 @@ h4{
   font-weight: 100;
   font-size: 10px;
   color: black;
+}
+
+p{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
 }
 
 .section{
@@ -83,7 +101,8 @@ h4{
 }
 
 #gallery_heading{
-  text-align: center;
+  text-align: left;
+  padding-left: 10px;
 }
 
 
@@ -147,4 +166,41 @@ h4{
 
 .container2{
   height: 900px;
+}
+
+.contact_container{
+  height: 600px;
+  padding-right: 20px;
+  padding-left: 10px;
+}
+
+.contact_info_container{
+  width: 44%;
+  float: left;
+  padding-right: 70px;
+}
+
+.contact_map_container{
+  width: 50%;
+  float: left;
+}
+
+.icons{
+  width: 30px;
+  float: left;
+}
+
+#text_right{
+  float: left;
+  padding-left: 20px;
+  font-size: 15px;
+}
+
+.icon_text_container{
+  width: 100%;
+  height: 50px;
+}
+
+.h1_black{
+  color: black;
 }
