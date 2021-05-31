@@ -1,170 +1,176 @@
-  <!DOCTYPE html>
-  <html lang="en" dir="ltr">
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
 
-  <head>
-    <meta charset="utf-8">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,300;1,100&display=swap" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,300;1,100&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/style.css">
-    <title></title>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Portfolio</title>
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-      $(document).ready(function() {
-        // Add smooth scrolling to all links
-        $("a").on('click', function(event) {
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
 
-          // Make sure this.hash has a value before overriding default behavior
-          if (this.hash !== "") {
-            // Prevent default anchor click behavior
-            event.preventDefault();
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
 
-            // Store hash
-            var hash = this.hash;
+          // Store hash
+          var hash = this.hash;
 
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-            $('html, body').animate({
-              scrollTop: $(hash).offset().top
-            }, 800, function() {
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function() {
 
-              // Add hash (#) to URL when done scrolling (default click behavior)
-              window.location.hash = hash;
-            });
-          } // End if
-        });
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
       });
-    </script>
+    });
+  </script>
 
 
-  </head>
+</head>
 
-  <body>
-    <div class="section">
-      <div class="container">
-        <img width="160px" src="/Users/maryam/Documents/Code/PresentationPortfolio/Images/GlintshotLogo.svg" alt="">
-        <div class="menu_container">
-          <a id="menu_buttons" href="index.html">HJEM</a>
-          <a id="menu_buttons" href="#gallery_heading">PROSJEKTER</a>
-          <a id="menu_buttons" href="#om_meg">OM MEG</a>
-          <a id="menu_buttons" href="#section_kontakt">KONTAKT</a>
+<body>
+  <div class="section">
+    <div class="container">
+      <a href="index.html"><img width="160" src="Images/GlintshotLogo.svg" alt=""></a>
+      <div class="menu_container">
+        <a class="menu_buttons" href="index.html">HJEM</a>
+        <a class="menu_buttons" href="#gallery_heading">PROSJEKTER</a>
+        <a class="menu_buttons" href="#om_meg">OM MEG</a>
+        <a class="menu_buttons" href="#section_kontakt">KONTAKT</a>
+      </div>
+    </div>
+  </div>
+  <div class="section" id="header_img">
+    <div class="color_overlay"></div>
+    <video autoplay muted loop id="myVideo">
+      <source src="Images/covervideo.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+    <div class="container">
+      <div class="heading_container">
+        <div class="Header_text_container">
+          <h1>VIDEO PRODUKSJON</h1>
         </div>
       </div>
     </div>
-    <div class="section" id="header_img">
-      <div class="color_overlay"></div>
-      <video autoplay muted loop id="myVideo">
-        <source src="/Users/maryam/Documents/Code/PresentationPortfolio/Images/covervideo.mp4" type="video/mp4">
-        Your browser does not support HTML5 video.
-      </video>
-      <div class="container">
-        <div class="heading_container">
-          <div class="Header_text_container">
-            <h1>VIDEO PRODUKSJON</h1>
-          </div>
-        </div>
-      </div>
+  </div>
+
+  <div class="spacer1"></div>
+
+  <div class="section">
+    <div class="container">
+      <h2 id="gallery_heading">PROSJEKTER</h2>
     </div>
 
-    <div class="spacer1"></div>
+  </div>
 
-    <div class="section">
-      <div class="container">
-        <h2 id="gallery_heading">PROSJEKTER</h2>
-      </div>
-
-    </div>
-
-    <div class="section">
-      <div class="container">
-        <div class="video_container">
-          <div class="my_video"><iframe width="100%" height="210px" src="https://www.youtube.com/embed/BeTtllEHVmU" title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-          <div class="my_video"><iframe width="100%" height="210px" src="https://www.youtube.com/embed/kLSRFo_D2q8" title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-          <div class="my_video"><iframe width="100%" height="210px" src="https://www.youtube.com/embed/s4ukAWAhduc" title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-          <div class="my_video"><iframe width="100%" height="210px" src="https://www.youtube.com/embed/r87n-fryHvg" title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-          <div class="my_video"><iframe width="100%" height="210px" src="https://www.youtube.com/embed/oBCcZI_lc98" title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-          <div class="my_video"><iframe width="100%" height="210px" src="https://www.youtube.com/embed/I53DpHof1-w" title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-          <div class="my_video"><iframe width="100%" height="210px" src="https://www.youtube.com/embed/dIvENyySTTs" title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-          <div class="my_video"><iframe width="100%" height="210px" src="https://www.youtube.com/embed/rNwsoMPgIfI" title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-          <div class="my_video"><iframe width="100%" height="210px" src="https://www.youtube.com/embed/PyqVdKjLQRg" title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-        </div>
+  <div class="section">
+    <div class="container">
+      <div class="video_container">
+        <div class="my_video"><iframe class="frame_width" src="https://www.youtube.com/embed/BeTtllEHVmU" title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="my_video"><iframe class="frame_width" src="https://www.youtube.com/embed/kLSRFo_D2q8" title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="my_video"><iframe class="frame_width" src="https://www.youtube.com/embed/s4ukAWAhduc" title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="my_video"><iframe class="frame_width" src="https://www.youtube.com/embed/r87n-fryHvg" title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="my_video"><iframe class="frame_width" src="https://www.youtube.com/embed/oBCcZI_lc98" title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="my_video"><iframe class="frame_width" src="https://www.youtube.com/embed/I53DpHof1-w" title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="my_video"><iframe class="frame_width" src="https://www.youtube.com/embed/dIvENyySTTs" title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="my_video"><iframe class="frame_width" src="https://www.youtube.com/embed/rNwsoMPgIfI" title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="my_video"><iframe class="frame_width" src="https://www.youtube.com/embed/PyqVdKjLQRg" title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
       </div>
     </div>
+  </div>
 
-    <div class="spacer1"></div>
+  <div class="spacer1"></div>
 
-    <div class="section">
-       <div class="container">
-         <div class="container2" id="om_meg">
-           <div class="picture_of_me_container">
+  <div class="section">
+     <div class="container">
+       <div class="container2" id="om_meg">
+         <div class="picture_of_me_container">
+           <img src="Images/kop.JPEG" width="500" alt="">
+         </div>
+         <div class="about_me_text_container">
+           <h2>Om mig</h2>
+           <p>Mitt navn er Mariam Bisultanova. Jeg er 24 års gammel Multimediedesginers student på UCL Erhvervsakademi og Professionshøjskole. Etter ett års hobby med kamera, får jeg mulighet til å utdype meg profesjonelt  i videoproduksjon gjennom min nåværende utdannelse. Allerede nå, via min personlig brand Glintshot tilbyr jeg kreativ videoproduksjon ved at lage unikt innhold som matcher kundenes ønsker og forventninger.
 
-           </div>
-           <div class="about_me_text_container">
-             <h2>Om mig</h2>
-             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas semper luctus magna id rutrum. Suspendisse tempor iaculis cursus. In sollicitudin pharetra augue. Sed dictum tellus sit amet euismod pretium. Duis rutrum euismod volutpat. Praesent facilisis elit lectus, vitae elementum mauris euismod vitae. Ut sed nibh varius, egestas eros at, lobortis augue. Pellentesque eleifend consectetur nibh, sit amet tempus risus. Aliquam vel sollicitudin risus, sit amet fringilla elit. Donec at velit velit. Aliquam porta rutrum risus, in blandit sapien auctor in. Curabitur in finibus sapien.</p>
-           </div>
+Som å lage video etter en ferdiglaget ide og storyboard, kan jeg dessuten produsere hele prosjektet fra A til Å. Det innebærer en gjennomtenkt prosjekt planlegging, det vil si ved ideutvikling tar jeg i utgangspunkt data omkring ens målgruppe og formål med videoen. Samtidig videoredigering med Davinci Resolve program hvor fargekorreksjon, grafikk og lydeffekter er inkludert.
+
+Utover det, har jeg styr på det hvilket kamerautstyr som skal brukes avhengig av videoens konsept.
+Med mine kunnskaper vil jeg gjerne være en del av marketing bransje hvor jeg kan bringe god innflytelse og gi en dråpe av suksess.
+			</p>
          </div>
        </div>
-   </div>
+     </div>
+ </div>
 
-    <div class="section">
-      <div class="container">
-        <div class="contact_container" id="section_kontakt">
-          <div class="contact_info_container">
-            <h2>Contact me</h2>
-            <h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-            </br></br></br>
-            <div class="icon_text_container">
-              <img src="/Users/maryam/Documents/Code/PresentationPortfolio/Images/call.png" width="30px" class="icons" alt="">
-              <h2 id="text_right">+45 54 54 54 54</h2>
-            </div>
-
-            <div class="icon_text_container">
-              <img src="/Users/maryam/Documents/Code/PresentationPortfolio/Images/mail.png" width="30px" class="icons" alt="">
-              <h2 id="text_right">contact@glitshot.com</h2>
-            </div>
-
-            <div class="icon_text_container">
-              <img src="/Users/maryam/Documents/Code/PresentationPortfolio/Images/adress.png" width="30px" class="icons" alt="">
-              <h2 id="text_right">lærkeparken 68, 2 th </br> 5240 Odense NØ</h2>
-            </div>
+  <div class="section">
+    <div class="container">
+      <div class="contact_container" id="section_kontakt">
+        <div class="contact_info_container">
+          <h2>KONTAKT</h2>
+          <p>Har dere bruk for en kreativ video produsent i deres team? </p>
+          <div class="spacer1"></div>
+          <div class="icon_text_container">
+            <img src="Images/call.png" width="30" class="icons" alt="">
+            <h2 class="text_right">+45 54 54 54 54</h2>
           </div>
-          <div class="contact_map_container">
-            <img src="/Users/maryam/Documents/Code/PresentationPortfolio/Images/map.jpg" width="100%" alt="">
+
+          <div class="icon_text_container">
+            <img src="Images/mail.png" width="30" class="icons" alt="">
+            <h2 class="text_right">contact@glitshot.com</h2>
           </div>
+
+          <div class="icon_text_container">
+            <img src="Images/adress.png" width="30" class="icons" alt="">
+            <h2 class="text_right">lærkeparken 68, 2 th <br> 5240 Odense NØ</h2>
+          </div>
+        </div>
+        <div class="contact_map_container">
+          <img src="Images/map.jpg" width="600" alt="">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="section">
+    <div class="container">
+      <div class="social_media_container">
+        <div class="icons_container">
+          <a href="https://www.facebook.com/glintshot"><img class="social_icons " src="Images/facebook.png" alt=""></a>
+          <a href="https://www.instagram.com/glintshot/"><img class="social_icons " src="Images/instagram.png" alt=""></a>
+          <a href="https://www.youtube.com/channel/UCJQ1NhmEqoPuKG1rDtyTTgA"><img class="social_icons " src="Images/youtube.png" alt=""></a>
+        </div>
+        <div class="footer_text">
+          <h4>© 2021 MARIAM BISULTANOVA</h4>
         </div>
       </div>
 
     </div>
+  </div>
 
+</body>
 
-    <div class="section">
-      <div class="container">
-        <div class="social_media_container">
-          <div class="icons_container">
-            <a href="https://www.facebook.com/glintshot"><img class="social_icons " src="/Users/maryam/Documents/Code/PresentationPortfolio/Images/facebook.png" alt=""></a>
-            <a href="https://www.instagram.com/glintshot/"><img class="social_icons " src="/Users/maryam/Documents/Code/PresentationPortfolio/Images/instagram.png" alt=""></a>
-            <a href="https://www.youtube.com/channel/UCJQ1NhmEqoPuKG1rDtyTTgA"><img class="social_icons " src="/Users/maryam/Documents/Code/PresentationPortfolio/Images/youtube.png" alt=""></a>
-          </div>
-          <div class="footer_text">
-            <h4>© 2021 MARIAM BISULTANOVA</h4>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-  </body>
-
-  </html>
+</html>
