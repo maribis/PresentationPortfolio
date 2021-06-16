@@ -126,6 +126,13 @@ p{
   width: calc(33% - 20px)
 }
 
+.my_xd{
+  margin: 10px;
+  float: left;
+  height: 210px;
+  width: calc(50% - 20px)
+}
+
 .video_container{
   margin: auto;
   width: 100%;
